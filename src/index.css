@@ -1,0 +1,42 @@
+html{
+  font-size: 62.5;
+  box-sizing: border-box;
+}
+body,
+#root{
+  height: 100vh;
+  margin: 0;
+}
+body,
+text,
+input,
+textarea {
+  font-size: 1.6rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  grid-template-rows: 4rem 1fr 4rem;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+header{
+  grid-area: header;
+  background-color: #2874f0;
+  color: white;
+  align-items: center;
+}
+main{
+  grid-area: main;
+}
+footer{
+  grid-area: footer;
+  background-color: #2874f0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
